@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+#main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+#image{
+    position: relative;
+    flex: 1;
+    width: auto;
+}
+#image #textLogo{
+    position: absolute;
+    top: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;  
+    height: 30px;  
+}
+#sign{
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+#sign form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex-wrap: wrap;
+}
+#sign form input, label{
+    flex: 1;
+}
