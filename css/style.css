@@ -13,6 +13,7 @@ img {
     height: 100vh;
     display: flex;
     flex-direction: row;
+    background-color: whitesmoke;
 }
 #image{
     position: relative;
@@ -24,22 +25,67 @@ img {
     top: 300px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;  
-    height: 30px;  
+    height: 150px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+}
+#image #textLogo > img {
+    object-fit: contain;
+    width: 100px;
+}
+#image #textLogo > h4 { 
+    align-self: center; 
+    font-size: 80px;
+    color: beige;
 }
 #sign{
     flex: 1;
     height: 100vh;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: column;  
+    gap: 50px;
+    
+}
+#sign h2, h3 {
+    padding: 5px 50px;
+}
+#sign h3 {
+    position: absolute;
 }
 #sign form{
     display: flex;
-    flex-direction: column;
     gap: 3px;
     flex-wrap: wrap;
+    background-color: lightcyan;
 }
-#sign form input, label{
+#sign form input{
+    width: 200px;
+    height: 25px;
+    border-radius: 6px;
+    box-shadow: none;
+    border: solid #E5E7EB 1px;
+}
+#sign form input :focus{
+    border: solid lightblue 1px;
+    box-shadow: 10px gray;
+}
+#sign form > div {
+    display: flex;
+    flex-direction: column;
     flex: 1;
+    min-width: 420px;
+    gap: 5px;
+    padding: 50px;
+}
+#sign form button {
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #596D48;
+}
+#sign form div:last-child{
+    background-color: whitesmoke;
+    padding: 20px 50px;
 }
